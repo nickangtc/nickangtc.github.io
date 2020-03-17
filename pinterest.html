@@ -1,0 +1,14 @@
+---
+layout: default-expanded
+title: Pinterest Tag firer
+---
+
+<input id="pagevisit" type="button">
+
+<script type="javascript/text">
+  document.querySelector('#pagevisit').addEventListener('click', () => {
+    pintrk('track', 'pagevisit', {
+      property: 'Athleta'
+    });
+  });
+</script>
