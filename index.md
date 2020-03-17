@@ -1,6 +1,8 @@
-{% include pinterest-tag.html %}
+---
+layout: default
+title: Nick Ang - Home
+---
 
 # Hello world! 👋
 
 [About](/about)
-[About.md](/about.md)

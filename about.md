@@ -1,4 +1,7 @@
-{% include pinterest-tag.html %}
+---
+layout: default
+title: Nick Ang - About
+---
 
 # Human
 
