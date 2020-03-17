@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: default-expanded
 title: Nick Ang - Home
 ---
 
