@@ -7,13 +7,29 @@ title: Pinterest Tag firer
 
 <h2>Fire at will</h2>
 
-<input id="pagevisit" type="button" value="PageVisit">
+<div>
+  <input id="pagevisit" type="button" value="PageVisit">
+</div>
+
+<div>
+  <form id="search">
+    <input id="search-input" type="text" name="search" value="Lorem ipsum">
+    <input type="submit" value="Submit Search">
+  </form>
+</div>
 
 <script>
   document.querySelector('#pagevisit').addEventListener('click', () => {
     console.log('pagevisit event fired')
     pintrk('track', 'pagevisit', {
       property: 'Athleta'
+    });
+  });
+
+  document.querySelector('#search').addEventListener('submit', (e) => {
+    console.log('search event fired')
+    pintrk('track', 'search', {
+      search_query: document.querySelector('#search-input').value
     });
   });
 </script>
