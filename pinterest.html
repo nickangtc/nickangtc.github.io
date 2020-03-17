@@ -34,6 +34,7 @@ title: Pinterest Tag firer
   document.querySelector('#addtocart').addEventListener('click', () => {
     console.log('addtocart event fired')
     pintrk('track', 'addtocart', {
+      order_id: Math.random().toString(36).substring(7),
       value: 100,
       order_quantity: 1,
       currency: 'EUR'
