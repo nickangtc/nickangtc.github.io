@@ -27,6 +27,7 @@ title: Pinterest Tag firer
   });
 
   document.querySelector('#search').addEventListener('submit', (e) => {
+    e.preventDefault();
     console.log('search event fired')
     pintrk('track', 'search', {
       search_query: document.querySelector('#search-input').value
