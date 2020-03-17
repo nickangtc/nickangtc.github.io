@@ -12,6 +12,10 @@ title: Pinterest Tag firer
 </div>
 
 <div>
+  <input id="addtocart" type="button" value="AddToCart">
+</div>
+
+<div>
   <form id="search">
     <input id="search-input" type="text" name="search" value="Lorem ipsum">
     <input type="submit" value="Submit Search">
@@ -23,6 +27,15 @@ title: Pinterest Tag firer
     console.log('pagevisit event fired')
     pintrk('track', 'pagevisit', {
       property: 'Athleta'
+    });
+  });
+
+  document.querySelector('#addtocart').addEventListener('click', () => {
+    console.log('addtocart event fired')
+    pintrk('track', 'addtocart', {
+      value: 100,
+      order_quantity: 1,
+      currency: 'EUR'
     });
   });
 
