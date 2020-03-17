@@ -3,10 +3,15 @@ layout: default-expanded
 title: Pinterest Tag firer
 ---
 
-<input id="pagevisit" type="button">
+<h1>Pinterest Tag firer</h1>
+
+<h2>Fire at will</h2>
+
+<input id="pagevisit" type="button" value="PageVisit">
 
 <script type="javascript/text">
   document.querySelector('#pagevisit').addEventListener('click', () => {
+    console.log('pagevisit event fired')
     pintrk('track', 'pagevisit', {
       property: 'Athleta'
     });
