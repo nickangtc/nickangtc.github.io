@@ -1,3 +1,3 @@
 # nickangtc.github.io
 
-gh-pages!
+I use this repo as free static hosting, mostly for testing things quickly.
